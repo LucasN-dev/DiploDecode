@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiploDecode</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <script src="scripts/decode.js"></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="inner-container">
+        <div id="decode-container">
+          <form>
+            <label id="immatTitle" for="immat"><h1>Saisir l'immatriculation :</h1></label>
+            <input type="text" id="immat" name="immat" maxlength="16" required><br>
+            <button type="button" id="decodeButton" onclick="decodeImmat(document.getElementById('immat').value)">Décoder</button> 
+          </form>
+        </div>
+        <div id="resultsDiv" style="display:none">
+          <div id="resultCountry" style="display:none"></div><br>
+          <div id="resultStatus" style="display:none"></div><br>
+          <div id="resultTax" style="display:none"></div><br>
+        </div>
+        <div id="errorDiv" style="display:none"></div>
+      </div>
+    </div>
+  </body>
+</html>

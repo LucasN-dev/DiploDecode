@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Mittelschrift";
+  src: url(mittelschrift-b.ttf) format("truetype");
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+}
+
+input[type="text"] {
+  background-color : #185440;
+  color: #d16d0b;
+  font-size: 4.5vw;
+  font-family: "Mittelschrift", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 73%;
+  border-radius: 6px;
+  border: solid 3px #d16d0b ;
+}
+
+#main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.3vw;
+}
+
+#inner-container {
+  text-align: center;
+}
+
+#decodeButton {
+  background-color: white; 
+  color: #185440;
+  border: 3px solid #185440;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#decodeButton:hover {
+  background-color: #185440;
+  color: white;
+}
+
+#decode-container {
+  margin-bottom: 50px;
+}
+
+#resultsDiv div {
+  text-align: left;
+  font-size: 1.3vw;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#errorDiv {
+  color: #ab0202;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  input[type="text"]{
+    font-size: 9vw;
+    width: 73%;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  #resultsDiv div {
+    font-size: 3vw;
+  }
+}
