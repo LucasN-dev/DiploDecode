@@ -20,7 +20,7 @@ input[type="text"] {
 }
 
 #main-container {
-  margin-top: 40px;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,6 +81,17 @@ h1 {
   background-color: #ccc;
   text-align: center;
   font-size: 0.9em;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 8px 0;
+  width: 100%;
+  background-color: #ccc;
+  text-align: center;
+  font-size: 1em;
 }
 
 .githubLink {
