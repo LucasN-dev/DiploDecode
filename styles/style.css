@@ -106,9 +106,8 @@ h1 {
   text-decoration: underline;
 }
 
-li:before {
-  margin-left: -25px;
-  padding-right: 10px;
+li {
+  list-style-position: outside;
 }
 
 @media only screen and (max-width: 900px) {
