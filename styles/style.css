@@ -94,6 +94,10 @@ h1 {
   text-decoration: underline;
 }
 
+li {
+  list-style-position: outside;
+}
+
 @media only screen and (max-width: 900px) {
   input[type="text"]{
     font-size: 9vw;
