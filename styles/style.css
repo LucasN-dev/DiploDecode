@@ -71,6 +71,28 @@ h1 {
   text-align: center;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 8px 0;
+  width: 100%;
+  background-color: #ccc;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.githubLink {
+  text-decoration: none;
+  background-color: #ccc;
+  color: #337ab7;
+}
+
+.githubLink:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 900px) {
   input[type="text"]{
     font-size: 9vw;
