@@ -49,7 +49,7 @@ async function decodeImmat(rawImmat) {
     }
 
     // retrieve countries/orgs identification codes
-    const codes = await getJSON("../data/codes.json");
+    const codes = await getJSON("./data/codes.json");
     let result = "NONE";
 
     // retrieve country/org string if code is valid
