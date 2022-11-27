@@ -87,11 +87,12 @@ h1 {
   position: fixed;
   left: 0;
   top: 0;
-  padding: 8px 0;
+  padding: 8px 28px;
   width: 100%;
   background-color: #ccc;
   text-align: center;
   font-size: 1em;
+  box-sizing: border-box
 }
 
 .githubLink {
