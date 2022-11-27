@@ -123,4 +123,8 @@ li {
   #resultsDiv div {
     font-size: 4.5vw;
   }
+
+  #errorDiv {
+    font-size: 4.8vw;
+  }
 }
