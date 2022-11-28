@@ -27,7 +27,7 @@ async function decodeImmat(rawImmat) {
         return false;
     }
 
-    // check if deleguation (first char is E,S,U, or N)
+    // check if delegation (first char is E,S,U, or N)
     let delegation = "None"
     if (!(cleanImmat.charAt(0) >= '0' && cleanImmat.charAt(0) <= '9')) {
         delegation = cleanImmat.charAt(0);
@@ -95,16 +95,16 @@ async function decodeImmat(rawImmat) {
         } else if (code <= 400) {
             switch (delegation) {
                 case 'E':
-                    resultTxt = "Pays : " + result + " (Déléguation à l'OCDE)";
+                    resultTxt = "Pays : " + result + " (Délégation à l'OCDE)";
                     break;
                 case 'S':
-                    resultTxt = "Pays : " + result + " (Déléguation au Conseil de l'Europe)";
+                    resultTxt = "Pays : " + result + " (Délégation au Conseil de l'Europe)";
                     break;
                 case 'U':
-                    resultTxt = "Pays : " + result + " (Déléguation à l'UNESCO)";
+                    resultTxt = "Pays : " + result + " (Délégation à l'UNESCO)";
                     break;
                 case 'N':
-                    resultTxt = "Pays : " + result + " (Déléguation à l'OTAN)";
+                    resultTxt = "Pays : " + result + " (Délégation à l'OTAN)";
                     break;
                 default:
                     displayError();
