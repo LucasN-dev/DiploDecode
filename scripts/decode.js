@@ -111,7 +111,7 @@ async function decodeImmat(rawImmat) {
                     return false;
               }
         } else if (code == 500) {
-            resultTxt = "Haute personnalité 🤫🤫";
+            resultTxt = "Haute personnalité 🤫😎";
         } else {
             resultTxt = "Organisation : " + result;
         }
